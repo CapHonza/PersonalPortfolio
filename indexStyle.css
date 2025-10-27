@@ -141,6 +141,7 @@ button:hover {
     font-size: 18px;
     border: 2px solid #B88746;
     margin-top: 15px;
+    box-shadow: 3px 3px 3px;
 }
 
 .head-button:hover {
