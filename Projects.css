@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background-color: #1E1B18;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    color: #EAE0D5;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    padding: 50px;
+    text-align: center;
+    background-color: #2C2623;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin-bottom: 25px;
+    color: #B88746;
+}
+
+/* Nav */
+nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2623;
+    padding: 10px 20px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+} 
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav a { 
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #B88746;
+    border-radius: 10px;
+    border: 2px solid #B88746;
+    box-shadow: 3px 3px 3px;
+} 
+
+nav a:hover { 
+    background-color: #E0A75D;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+}
+
+/* Jazykové tlačítka */
+.nav-lang {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #B88746;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 16px;
+    border: 2px solid #B88746;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lang-btn img {
+    width: 20px;
+    height: auto;
+    border-radius: 3px;
+}
+
+.lang-btn.active {
+    background-color: #E0A75D;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+.link.active {
+    background-color: #E0A75D;
+}
+
+/* Section */
+section {
+    background-color: #2C2623;
+    max-width: 100%;
+    padding: 25px; /* Nechává kontent uvnitř odstrčený od krajů */
+    margin-top: 20px; /* Přidá vrchní mezeru pro pozici */
+    box-sizing: border-box; /* Zajistí, že padding neovlivňuje šířku */
+    overflow: hidden;
+    flex: 1;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* Projects Grid */
+.projects {
+    display: grid;
+    gap: 50px;
+    padding: 60px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden; /* Obrázek se drží zaoblení */
+    background: #4A413C;
+    color: inherit;
+    text-decoration: none;
+    border: 5px solid #B88746;
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 4px solid #B88746;
+}
+
+.card-content { 
+    padding: 14px; 
+    text-align: center;
+}
+
+.card-content h3 { margin: 0; }
+
+.project-card:hover {
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #2C2623;
+    text-align: center;
+    margin-top: 20px;
+    padding: 1px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* Responsive Exceptions */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+    }
+}

@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1B18;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    color: #EAE0D5;
+    padding: 10px;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: larger;
+}
+
+footer p {
+    font-size: initial;
+}
+
+/* Header */
+header {
+    padding: 50px;
+    text-align: center;
+    background-color: #2C2623;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin-bottom: 25px;
+    color: #B88746;
+}
+
+.hero-intro {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    margin-bottom: 40px;
+}
+
+/* Nav */
+nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2623;
+    padding: 10px 20px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+} 
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav a { 
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #B88746;
+    border-radius: 10px;
+    border: 2px solid #B88746;
+    box-shadow: 3px 3px 3px;
+} 
+
+nav a:hover { 
+    background-color: #E0A75D;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+}
+
+/* Jazykové tlačítka */
+.nav-lang {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #B88746;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 16px;
+    border: 2px solid #B88746;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lang-btn img {
+    width: 20px;
+    height: auto;
+    border-radius: 3px;
+}
+
+.lang-btn.active {
+    background-color: #E0A75D;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+.link.active {
+    background-color: #E0A75D;
+}
+
+/* Section */
+section {
+    background-color: #2C2623;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Cards in Section*/
+.top-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #4A413C;
+    color: #EAE0D5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #4A413C;
+    color: #EAE0D5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.icon svg {
+    width: 150px;
+    height: 150px;
+}
+
+.info {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #2C2623;
+    text-align: center;
+    margin-top: 20px;
+    padding: 1px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* Responsive Exceptions */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+    }
+}

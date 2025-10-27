@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1B18;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    color: #EAE0D5;
+    padding: 10px;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    padding: 50px;
+    text-align: center;
+    background-color: #2C2623;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin-bottom: 25px;
+    color: #B88746;
+}
+
+/* Nav */
+nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2623;
+    padding: 10px 20px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+} 
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav a { 
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #B88746;
+    border-radius: 10px;
+    border: 2px solid #B88746;
+    box-shadow: 3px 3px 3px;
+} 
+
+nav a:hover { 
+    background-color: #E0A75D;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+}
+
+/* Jazykové tlačítka */
+.nav-lang {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #B88746;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 16px;
+    border: 2px solid #B88746;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lang-btn img {
+    width: 20px;
+    height: auto;
+    border-radius: 3px;
+}
+
+.lang-btn.active {
+    background-color: #E0A75D;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+.link.active {
+    background-color: #E0A75D;
+}
+
+/* Main */
+main {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Cards */
+aside /*left*/ {
+    flex: 1;
+    max-width: 25%;
+    background-color: #2C2623;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    padding: 20px;
+}
+
+aside p {
+    font-size: larger;
+}
+
+aside ul {
+    margin: 0;
+    padding-left: 16px;
+}
+
+aside li {
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+section /*right*/ {
+    flex: 3;
+    background-color: #2C2623;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    padding: 20px;
+}
+
+section p {
+    font-size: larger;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* Contacts */
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #EAE0D5;
+}
+
+.social-link:hover {
+    color: #E0A75D;
+    text-decoration: underline;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+/* ProfilPic & Desrciption */
+.imgboxik {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    background-color: #bfc1c5;
+}
+
+.profile-pic img {
+    position: relative;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid;
+}
+
+/*Certificate image*/
+.lightbox-certif {  /* jen pro certifikát */
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-certif:target {   /* když se klikne na obrázek → zobrazí se */
+  display: flex;
+}
+
+.lightbox-certif img {  /* velký obrázek uprostřed */
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  border: 3px solid #B88746; /* tvoje zlatá barva */
+  background-color: #1E1B18; /* tmavé pozadí pod obrázkem */
+  padding: 5px;
+}
+
+.certifimg img {
+  cursor: zoom-in;  /* kurzor na malém obrázku */
+  transition: transform 0.2s ease;
+}
+
+.certifimg img:hover {
+  transform: scale(1.03);
+}
+
+.imgboxik-certif {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.certifimg img {
+    display: block;
+    margin-inline: auto;
+    position: relative;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid;
+    cursor: zoom-in;
+}
+
+.certifimg a img {
+    border: none;
+    outline: none;
+}
+
+#close-certif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2C2623;
+    text-align: center;
+    margin-top: 20px;
+    padding: 1px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* Responsive Exceptions */
+@media (max-width: 768px) {
+
+    /* celý main se změní na sloupec */
+    main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* aside = plná šířka */
+    aside {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* obrázky se krásně přizpůsobí */
+    .profile-pic img,
+    .imgboxik,
+    .imgboxik img,
+    .certifimg img {
+        width: 100% !important;
+        height: auto;
+        max-width: 250px; /* abychom měli horní limit */
+        margin: 0 auto;
+    }
+
+    /* sociální linky: nezalamovat text do úzkého sloupku */
+    .social-link,
+    .social-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        width: 100%;
+    }
+
+    span {
+        word-break: break-word; /* dlouhé odkazy nezničí layout */
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+    }
+}
