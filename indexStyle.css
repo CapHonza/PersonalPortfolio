@@ -357,3 +357,31 @@ footer {
         text-align: center;
     }
 }
+
+/* FIX Services + Contact – Mobile */
+@media (max-width: 768px) {
+
+    .service-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .icon {
+        max-width: 100% !important;
+    }
+
+    .icon svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .social-link span {
+        word-break: break-all;
+    }
+
+    .social-item {
+        flex-wrap: wrap;
+    }
+}
+
