@@ -136,6 +136,7 @@ button:hover {
     height: 35px;
     text-align: center;
     background: #B88746;
+    color: black;
     border-radius: 10px;  /* zaoblené rohy */
     font-size: 18px;
     border: 2px solid #B88746;
