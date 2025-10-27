@@ -143,6 +143,13 @@ button:hover {
     margin-top: 15px;
 }
 
+.head-button:hover {
+    background-color: #E0A75D;
+    transition: background 0.3s ease-in-out;
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+}
+
 .about-btn {
     width: 200px;
     height: 35px;
