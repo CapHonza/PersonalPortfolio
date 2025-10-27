@@ -125,6 +125,13 @@ button:hover {
 }
 
 .head-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 26px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
     width: 200px;
     height: 35px;
     text-align: center;
