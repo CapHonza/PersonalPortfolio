@@ -1,4 +1,6 @@
-Osobní portfolio vytvořené pomocí HTML/CSS + SVG
+Osobní portfolio vytvořené pomocí HTML/CSS + SVG a trochu JavaScriptu + JSONu pro přepínání mezi češtinou a angličtinou.
+
+Personal portfolio created with HTML/CSS + SVG and little bit of JavaScript + JSON for switching between czech and english.
 
 Barevná paleta:
     Pozadí: #1E1B18 (tmavě hnědošedá)
