@@ -125,7 +125,10 @@
         "pp-kt3": "CSS Grid, Flexbox and more advanced styling techniques",
         "pp-kt4": "Maintaining correct aspect ratios for web images",
         "pp-kt5": "Better handling of file paths, linking and project structure",
-        "pp-kt6": "Basic JavaScript for dynamic content (language switcher)"
+        "pp-kt6": "Basic JavaScript for dynamic content (language switcher)",
+        "gdpr-text": "This website uses **functional Local Storage** to save your language preference. By continuing to browse, you agree to these preference files.",
+        "gdpr-link-text": "More Information",
+        "gdpr-button": "I Understand and Agree"
     },
 
     "cz": {
@@ -255,6 +258,9 @@
         "pp-kt3": "CSS Grid, Flexbox a pokročilejší techniky stylování",
         "pp-kt4": "Správné zachování poměru stran u webových obrázků",
         "pp-kt5": "Lepší práce se strukturou projektu, cestami k souborům a odkazováním",
-        "pp-kt6": "Základní JavaScript pro dynamický obsah (přepínání jazyků)"
+        "pp-kt6": "Základní JavaScript pro dynamický obsah (přepínání jazyků)",
+        "gdpr-text": "Tento web používá **funkční Local Storage** pro uložení Vaší jazykové preference. Pokračováním v prohlížení souhlasíte s těmito preferenčními soubory.",
+        "gdpr-link-text": "Více informací",
+        "gdpr-button": "Rozumím a Souhlasím"
     }
 }
