@@ -14,8 +14,16 @@
     <title data-lang-key="index-title">Home | Jan Čáp</title>
     <link rel="stylesheet" href="indexStyle.css">
     <link rel="icon" type="image/png" href="Obrazky/favicon.png">
+
+    <script src="assets/js/lang.js"></script>  
+    <script>window.LANG_DICT_PATH = 'assets/i18n/lang.json';</script>
 </head>
 <body>
+    <div id="gdpr-banner">
+        <p data-lang-key="gdpr-text">This website uses **functional Local Storage** to save your language preference. By continuing to browse, you agree to these preference files.</p>
+        <a href="PrivacyPolicy.html" target="_blank" data-lang-key="gdpr-link-text">More Information</a> 
+        <button id="gdpr-accept-btn" data-lang-key="gdpr-button">I Understand and Agree</button>
+    </div>
     <header>
         <h1 data-lang-key="index-header-h1">Turning Ideas Into Real Websites</h1>
         <p class="hero-subtitle" data-lang-key="index-header-subtitle" data-lang-html=>I create simple, functional, and meaningful websites. Take a look at what I’ve made so far! 👇</p>
@@ -199,7 +207,41 @@
             | Freelancer <img src="Obrazky/freelancer-com-seeklogo.png" alt="FreeLancer" width="15px" height="auto"> 
         </p>
     </footer>
-<script>window.LANG_DICT_PATH = 'assets/i18n/lang.json';</script>
-<script src="assets/js/lang.js"></script>
+<script>
+    // Zde už je HTML prvek načten, takže to bude fungovat
+    const banner = document.getElementById('gdpr-banner');
+    const acceptBtn = document.getElementById('gdpr-accept-btn');
+    const consentKey = 'gdpr_accepted_v3';
+
+    // 1. KONTROLA PŘI NAČTENÍ
+    if (localStorage.getItem(consentKey) === 'true') {
+        if (banner) {
+            banner.style.display = 'none';
+        }
+        
+        // Pokud je souhlas, spustíme jazykový skript
+        if (typeof startLangSwitcher === 'function') {
+            startLangSwitcher();
+        }
+    } else {
+        // Zde nespouštíme nic, banner zůstává viditelný
+    }
+
+    // 2. KLIKNUTÍ NA TLAČÍTKO
+    if (acceptBtn && banner) {
+        acceptBtn.addEventListener('click', () => {
+            // A. Uloží souhlas
+            localStorage.setItem(consentKey, 'true');
+            
+            // B. Skryje banner
+            banner.style.display = 'none';
+
+            // C. Spustí jazykový přepínač (GDPR BEZPEČNÉ!)
+            if (typeof startLangSwitcher === 'function') {
+                startLangSwitcher();
+            }
+        });
+    }
+</script>
 </body>
 </html>
