@@ -154,6 +154,13 @@ footer {
     line-height: 1.5;
 }
 
+#gdpr-accept-btn {
+    /* Zajištění, že je text uvnitř vycentrovaný (vertikálně i horizontálně, pokud má pevnou velikost) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #gdpr-banner a {
     color: #B88746; 
     text-decoration: underline;
