@@ -144,12 +144,12 @@ section {
 }
 
 .text a {
-    color: #EAE0D5;
+    color: #E0A75D;
     text-decoration: none;
 }
 
 .text a:hover {
-    color: #E0A75D;
+    color: #E9B776;
     text-decoration: underline;
 }
 
