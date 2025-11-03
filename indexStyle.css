@@ -13,6 +13,10 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 /* Header */
 header {
     padding: 50px;
@@ -110,20 +114,6 @@ nav a:hover {
 }
 
 /* Buttons */
-button {
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-    box-shadow: 3px 3px 3px;
-}
-
-button:hover {
-    background-color: #E0A75D;
-    transition: background 0.3s ease-in-out;
-    transform: scale(1.03);
-    transition: transform 0.2s ease;
-}
-
 .head-button {
     display: inline-flex;
     justify-content: center;
@@ -158,19 +148,46 @@ button:hover {
     border-radius: 10px;
     font-size: 18px;
     border: 2px solid #B88746;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    box-shadow: 3px 3px 3px;
+}
+
+.about-btn:hover {
+    background-color: #E0A75D;
+    transition: background 0.3s ease-in-out;
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
 }
 
 .service-button {
     width: 200px;
     height: 35px;
+    background: #B88746;
     border-radius: 10px;
     font-size: 18px;
+    border: 2px solid #B88746;
+    text-decoration: none;
+    font-weight: bold;
     text-align: center;
-    background: #B88746;
+    display: inline-flex;
     justify-content: center;
-    border: 2px solid #B88746
+    align-items: center;
+    color: black;
+    box-shadow: 3px 3px 3px;
 }
 
+.service-button:hover {
+    background-color: #E0A75D;
+    transition: background 0.3s ease-in-out;
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+}
 /* Cards */
 section {
     background-color: #2C2623;
@@ -286,11 +303,11 @@ section {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #EAE0D5;
+    color: #E0A75D;
 }
 
 .social-link:hover {
-    color: #E0A75D;
+    color: #E9B776;
     text-decoration: underline;
 }
 
@@ -327,6 +344,7 @@ footer {
 
     .info {
         width: 100%;
+        align-items: center;
     }
 
     .profile-pic {
