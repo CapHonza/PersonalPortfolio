@@ -162,11 +162,11 @@ section p {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #EAE0D5;
+    color: #E0A75D;
 }
 
 .social-link:hover {
-    color: #E0A75D;
+    color: #E9B776;
     text-decoration: underline;
 }
 
