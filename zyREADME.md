@@ -10,6 +10,7 @@ Barevná paleta: <br>
     Tlačítka: #B88746 (zlatý jantar) <br>
     Hover: #E0A75D (teplejší světlo) <br>
     Akcent (linky, ikonky): #8D6A3F (karamelová) <br>
+    Link Hover: #E9B776 <br>
 
 Color pallete: <br>
     Background: #1E1B18 — deep coffee gray <br>
@@ -19,3 +20,4 @@ Color pallete: <br>
     Buttons, Icons: #B88746 — golden amber <br>
     Hover: #E0A75D — warm highlight <br>
     Accent (lines): #8D6A3F — caramel tone <br> 
+    Link Hover: #E9B776 <br>
