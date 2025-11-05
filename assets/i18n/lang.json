@@ -1,9 +1,9 @@
 {
     "en": {
-        "index-meta-description": "I'm Jan Čáp, a beginner web developer and IT student from Prague. I create modern, fast, and responsive websites. Let's build something together.",
-        "about-meta-description": "Learn about my journey. I'm an Information Technology student at Charles University with a passion for web development and creating clean, efficient code.",
+        "index-meta-description": "I'm Jan Čáp, a beginner web developer and IT student based in Ledeč nad Sázavou (Vysočina region). I create modern, fast, and responsive websites. Let's build something together.",
+        "about-meta-description": "Learn about my journey. I'm an IT student with roots in Ledeč nad Sázavou (Czechia) and a passion for web development and creating clean, efficient code.",
         "projects-meta-description": "Explore my portfolio of web projects. See examples of my work in HTML and CSS, ranging from simple landing pages to more complex sites.",
-        "services-meta-description": "Need a new website or help with an existing one? I offer freelance web development services, from custom HTML/CSS coding to responsive design.",
+        "services-meta-description": "Need a new website? I offer freelance web development from the Vysočina Region, Czechia, available worldwide. Specializing in HTML/CSS and responsive design.",
         "index-title": "Home | Jan Čáp",
         "index-header-h1": "Turning Ideas Into Real Websites",
         "index-header-subtitle": "I create simple, functional, and meaningful websites. Take a look at what I’ve made so far! 👇",
@@ -160,10 +160,10 @@
     },
 
     "cz": {
-        "index-meta-description": "Jsem Jan Čáp, začínající web developer a student IT z Prahy. Tvořím moderní, rychlé a responzivní weby. Pojďme společně něco vytvořit.",
-        "about-meta-description": "Přečtěte si o mé cestě. Jsem student Informačních technologií na Univerzitě Karlově s vášní pro vývoj webu a tvorbu čistého, efektivního kódu.",
+        "index-meta-description": "Jsem Jan Čáp, začínající web developer a student IT z Ledče nad Sázavou (Vysočina). Tvořím moderní, rychlé a responzivní weby. Pojďme společně něco vytvořit.",
+        "about-meta-description": "Přečtěte si o mé cestě. Jsem student IT s bydlištěm v Ledči nad Sázavou a vášní pro vývoj webu a tvorbu čistého, efektivního kódu.",
         "projects-meta-description": "Prohlédněte si mé portfolio webových projektů. Podívejte se na ukázky mé práce v HTML a CSS, od jednoduchých stránek po komplexnější weby.",
-        "services-meta-description": "Potřebujete nový web nebo pomoci s tím stávajícím? Nabízím freelance služby ve webovém vývoji, od kódování v HTML/CSS po responzivní design.",
+        "services-meta-description": "Potřebujete nový web? Nabízím freelance web development z Vysočiny pro celou ČR i svět. Od kódování v HTML/CSS po responzivní design",
         "index-title": "Domů | Jan Čáp",
         "index-header-h1": "Proměňuji Nápady Ve Skutečné Webové Stránky",
         "index-header-subtitle": "Vytvářím jednoduché, funkční a smysluplné weby. Podívejte se na to, co už mám hotové! 👇",
