@@ -45,11 +45,13 @@ const applyLang = (lang) => {
     if (!dict || !dict[lang]) return;
 
     // ... (Logika pro Title, meta a texty) ...
-    if (dict[lang]['meta-title']) document.title = dict[lang]['meta-title'];
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta && dict[lang]['meta-description']) {
-        meta.setAttribute('content', dict[lang]['meta-description']);
-    }
+    // if (dict[lang]['meta-title']) document.title = dict[lang]['meta-title'];
+    // const meta = document.querySelector('meta[name="description"]');
+    // if (meta && dict[lang]['meta-description']) {
+    //    meta.setAttribute('content', dict[lang]['meta-description']);
+    // }
+    // Vypnutý překlad meta tagů natvrdo
+    // ======================================
 
     document.querySelectorAll('[data-lang-key]').forEach(el => {
         const key = el.dataset.langKey;
