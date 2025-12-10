@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="cs" translate="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Social Preview (Open Graph) -->
-    <meta property="og:title" content="Jan Čáp — About Me">
-    <meta property="og:description" content="About Me section of Jan Čáp - beginner web developer">
+    <meta property="og:title" content="O mně | Jan Čáp - IT Student">
+    <meta property="og:description"
+        content="Jsem student IT na Univerzitě Karlově v Praze, hraju hry a učím se programovat. Přečtěte si můj příběh – od tenisu a ekonomky až k tvorbě webů a Pythonu.">
     <meta property="og:image" content="https://caphonza.github.io/PersonalPortfolio/Obrazky/SocialPreview.png">
     <meta property="og:url" content="https://caphonza.github.io/PersonalPortfolio/AboutMe.html">
     <meta property="og:type" content="website">
     <!-- Twitter cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Me | Jan Čáp">
-    <meta name="twitter:description" content="Read my story. IT student & web developer from Vysočina.">
+    <meta name="twitter:title" content="O mně | Jan Čáp - IT Student">
+    <meta name="twitter:description"
+        content="Jsem student IT na Univerzitě Karlově v Praze, hraju hry a učím se programovat. Přečtěte si můj příběh – od tenisu a ekonomky až k tvorbě webů a Pythonu.">
     <meta name="twitter:image" content="https://caphonza.github.io/PersonalPortfolio/Obrazky/SocialPreview.png">
     <!-- Author/Keywords -->
     <meta name="author" content="Jan Čáp">
-    <meta name="keywords" content="Web Developer, Portfolio, IT Student, Jan Čáp, HTML, CSS, JavaScript, Ledeč nad Sázavou, Vysočina">
+    <meta name="keywords"
+        content="Web Developer, Portfolio, IT Student, Jan Čáp, HTML, CSS, JavaScript, Ledeč nad Sázavou, Vysočina">
     <!-- Google preview -->
-    <meta name="description" 
-          content="Learn about my journey. I'm an IT student with roots in Ledeč nad Sázavou (Czechia) and a passion for web development and creating clean, efficient code." 
-            data-lang-key="about-meta-description" 
-              data-lang-attr="content">
+    <meta name="description"
+        content="Jsem student IT na Univerzitě Karlově v Praze, hraju hry a učím se programovat. Přečtěte si můj příběh – od tenisu a ekonomky až k tvorbě webů a Pythonu."
+        data-lang-key="about-meta-description" data-lang-attr="content">
     <!-- Dual language website -->
     <link rel="alternate" hreflang="en" href="https://caphonza.github.io/PersonalPortfolio/AboutMe.html" />
     <link rel="alternate" hreflang="cs" href="https://caphonza.github.io/PersonalPortfolio/AboutMe.html" />
@@ -29,38 +32,40 @@
     <!-- Theme color for mobile browsers -->
     <meta name="theme-color" content="#1E1B18">
 
-    <title data-lang-key="about-me-title">About Me | Jan Čáp</title>
+    <title data-lang-key="about-me-title">O mně | Jan Čáp - IT Student</title>
     <link rel="stylesheet" href="AboutMe.css">
     <link rel="icon" type="image/png" href="Obrazky/favicon.png">
 
-    <script src="assets/js/lang.js"></script> 
+    <script src="assets/js/lang.js"></script>
     <script>window.LANG_DICT_PATH = 'assets/i18n/lang.json';</script>
 </head>
+
 <body>
     <div id="gdpr-banner">
-        <p data-lang-key="gdpr-text">This website uses **functional Local Storage** to save your language preference. By continuing to browse, you agree to these preference files.</p>
-        <a href="PrivacyPolicy.html" target="_blank" data-lang-key="gdpr-link-text">More Information</a> 
-        <button id="gdpr-accept-btn" data-lang-key="gdpr-button">I Understand and Agree</button>
+        <p data-lang-key="gdpr-text">Tento web používá **funkční Local Storage** pro uložení Vaší jazykové preference.
+            Pokračováním v prohlížení souhlasíte s těmito preferenčními soubory.</p>
+        <a href="PrivacyPolicy.html" target="_blank" data-lang-key="gdpr-link-text">Více informací</a>
+        <button id="gdpr-accept-btn" class="head-button" data-lang-key="gdpr-button">Rozumím a Souhlasím</button>
     </div>
     <header>
-        <h1 data-lang-key="about-me-h1">About Me</h1>
-        <p class="hero-subtitle" data-lang-key="about-me-subtitle">Student & Beginner Web Developer</p>
+        <h1 data-lang-key="about-me-h1">O mně</h1>
+        <p class="hero-subtitle" data-lang-key="about-me-subtitle">Student a Začínající Webový Vývojář</p>
     </header>
     <nav>
         <div class="nav-links">
-            <a href="index.html" data-lang-key="nav-home">Home</a>
-            <a href="Services.html" data-lang-key="nav-services">Services</a>
-            <a href="Projects.html" data-lang-key="nav-projects">Projects</a>
-            <a href="AboutMe.html" class="link active" data-lang-key="nav-about">About Me</a>
+            <a href="index.html" data-lang-key="nav-home">Domů</a>
+            <a href="Services.html" data-lang-key="nav-services">Služby</a>
+            <a href="Projects.html" data-lang-key="nav-projects">Projekty</a>
+            <a href="AboutMe.html" class="link active" data-lang-key="nav-about">O mně</a>
         </div>
 
         <div class="nav-lang">
             <button class="lang-btn" data-lang="en">
-                <img src="Obrazky/flag-uk.svg" alt="English">
+                <img src="Obrazky/flag-uk.svg" alt="Angličtina">
                 EN
             </button>
             <button class="lang-btn" data-lang="cz">
-                <img src="Obrazky/flag-cz.svg" alt="Czech">
+                <img src="Obrazky/flag-cz.svg" alt="Čeština">
                 CZ
             </button>
         </div>
@@ -69,201 +74,217 @@
         <aside>
             <div class="imgboxik">
                 <div class="profile-pic">
-                    <img src="Obrazky/Profilovka.jpg" alt="Profile Picture of Web Developer Jan Čáp">
+                    <img src="Obrazky/Profilovka.jpg" alt="Profilový Obrázek webového vývojáře Jana Čápa">
                 </div>
             </div>
-            <h2 data-lang-key="about-aside-top" data-lang-html>Jan Čáp<br>University Student<br><br>Faculty of Education, Charles University in Prague 🦉</h2>
+            <h2 data-lang-key="about-aside-top" data-lang-html>Jan Čáp<br>Student Univerzity<br><br>Pedagogická fakulta,
+                Univerzita Karlova 🦉</h2>
             <hr>
-            <h2 data-lang-key="about-aside-contacts">Contacts</h2>
+            <h2 data-lang-key="about-aside-contacts">Kontakty</h2>
             <div class="social-links">
-            <div class="social-item">
-                <img src="Obrazky/icons8-gmail-logo-48.png" alt="Gmail" class="social-icon">
-                <span style="font-size: larger;">capjan.work@gmail.com</span>
+                <div class="social-item">
+                    <img src="Obrazky/icons8-gmail-logo-48.png" alt="Gmail" class="social-icon">
+                    <span style="font-size: larger;">capjan.work@gmail.com</span>
+                </div>
             </div>
-        </div>
-        <div class="social-links">
-            <div class="social-item">
-                <a href="https://www.instagram.com/cap_honza/" target="_blank" class="social-link" rel="noopener noreferrer">
-                    <img src="Obrazky/icons8-instagram-48.png" alt="Instagram" class="social-icon">
-                    <span style="font-size: larger;">https://www.instagram.com/cap_honza/</span>
-                </a>
+            <div class="social-links">
+                <div class="social-item">
+                    <a href="https://www.instagram.com/cap_honza/" target="_blank" class="social-link"
+                        rel="noopener noreferrer">
+                        <img src="Obrazky/icons8-instagram-48.png" alt="Instagram" class="social-icon">
+                        <span style="font-size: larger;">https://www.instagram.com/cap_honza/</span>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="social-links">
-            <div class="social-item">
-                <a href="https://github.com/CapHonza" target="_blank" class="social-link" rel="noopener noreferrer">
-                    <img src="Obrazky/icons8-github-48.png" alt="GitHub" class="social-icon">
-                    <span style="font-size: larger;">https://www.github.com/CapHonza</span>
-                </a>
+            <div class="social-links">
+                <div class="social-item">
+                    <a href="https://github.com/CapHonza" target="_blank" class="social-link" rel="noopener noreferrer">
+                        <img src="Obrazky/icons8-github-48.png" alt="GitHub" class="social-icon">
+                        <span style="font-size: larger;">https://www.github.com/CapHonza</span>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="social-links">
-            <div class="social-item">
-                <a href="https://www.freelancer.com/u/jancap17" target="_blank" class="social-link" rel="noopener noreferrer">
-                    <img src="Obrazky/freelancer-com-seeklogo.png" alt="FreeLancer" class="social-icon">
-                    <span style="font-size: larger;">https://www.freelancer.com/u/jancap17</span>
-                </a>
+            <div class="social-links">
+                <div class="social-item">
+                    <a href="https://www.freelancer.com/u/jancap17" target="_blank" class="social-link"
+                        rel="noopener noreferrer">
+                        <img src="Obrazky/freelancer-com-seeklogo.png" alt="FreeLancer" class="social-icon">
+                        <span style="font-size: larger;">https://www.freelancer.com/u/jancap17</span>
+                    </a>
+                </div>
             </div>
-        </div>
             <hr>
-            <h2 data-lang-key="about-aside-skills">Skills</h2>
-            <p style="font-weight: bold;" data-lang-key="about-aside-skills1">Web Development</p>
+            <h2 data-lang-key="about-aside-skills">Dovednosti</h2>
+            <p style="font-weight: bold;" data-lang-key="about-aside-skills1">Tvorba Webu</p>
             <ul>
-                <li data-lang-key="about-aside-skills2">HTML/CSS which I would like to improve over time while adding JavaScript.</li>
+                <li data-lang-key="about-aside-skills2">HTML/CSS, které chci postupně zlepšovat a doplnit JavaScript.
+                </li>
             </ul>
             <p style="font-weight: bold;" data-lang-key="about-aside-skills3">MS Office</p>
             <ul>
                 <li data-lang-key="about-aside-skills4">Word, Excel, PowerPoint, MS Teams.</li>
             </ul>
-            <p style="font-weight: bold;" data-lang-key="about-aside-skills5">Team Leadership</p>
+            <p style="font-weight: bold;" data-lang-key="about-aside-skills5">Vedení Týmu</p>
             <ul>
-                <li data-lang-key="about-aside-skills6">I have an experience with leading a smaller team working on gamification project.</li>
+                <li data-lang-key="about-aside-skills6">Mám zkušenost s vedením menšího týmu při práci na gamifikačním
+                    projektu.</li>
             </ul>
             <hr>
-            <h2 data-lang-key="about-aside-interests">Interests</h2>
-            <p style="font-weight: bold;" data-lang-key="about-aside-interests1">Programming easy games in Python</p>
+            <h2 data-lang-key="about-aside-interests">Zájmy</h2>
+            <p style="font-weight: bold;" data-lang-key="about-aside-interests1">Programování jednoduchých her v Pythonu
+            </p>
             <ul>
-                <li data-lang-key="about-aside-interests2">Beginner but I would like to learn more through the time. For now its just a hobby for fun.</li>
+                <li data-lang-key="about-aside-interests2">Jsem začátečník, ale rád se budu postupně zlepšovat. Aktuálně
+                    spíš hobby pro zábavu.</li>
             </ul>
-            <p style="font-weight: bold;" data-lang-key="about-aside-interests3">Information Technologies</p>
+            <p style="font-weight: bold;" data-lang-key="about-aside-interests3">Informační Technologie</p>
             <ul>
-                <li data-lang-key="about-aside-interests4">Games, Ai (Artificial Intelligence), Web Development</li>
+                <li data-lang-key="about-aside-interests4">Hry, Ai (Umělá Inteligence), Tvorba Webu</li>
             </ul>
             <hr>
-            <h2 data-lang-key="about-aside-interests5">Certifikates</h2>
+            <h2 data-lang-key="about-aside-interests5">Certifikáty</h2>
             <ul>
-                <li data-lang-key="about-aside-interests6">Lead Methodologist of the gamified educational platform JukeBOX</li>
+                <li data-lang-key="about-aside-interests6">Hlavní metodik platformy pro gamifikované vzdělávání CZECH.UP
+                    JukeBox</li>
             </ul>
             <div class="imgboxik-certif">
                 <div class="certifimg">
                     <!-- náhledový obrázek -->
                     <a href="#certif-lightbox">
-                        <img src="Obrazky/Certificate.jpeg" alt="Certifikate of Web Developer Jan Čáp about his intership">
+                        <img src="Obrazky/Certificate.jpeg"
+                            alt="Certifikát webového vývojáře Jana Čápa z jeho praxe">
                     </a>
                 </div>
             </div>
             <!-- lightbox samotný -->
             <a href="#close-certif" class="lightbox-certif" id="certif-lightbox">
-                <img src="Obrazky/Certificate.jpeg" alt="Enlarged Certifikate of Web Developer Jan Čáp about his intership">    
+                <img src="Obrazky/Certificate.jpeg"
+                    alt="Zvětšený Certifikát webového vývojáře Jana Čápa z jeho praxe">
             </a>
             <hr>
-            <h2 data-lang-key="about-aside-language">Languages</h2>
+            <h2 data-lang-key="about-aside-language">Jazyky</h2>
             <ul class="list">
-                <li data-lang-key="about-aside-language-cz">Czech - Native</li>
-                <li data-lang-key="about-aside-language-en">English - B2/C1</li>
+                <li data-lang-key="about-aside-language-cz">Čeština - Rodilý Mluvčí</li>
+                <li data-lang-key="about-aside-language-en">Angličtina - B2/C1</li>
             </ul>
         </aside>
         <section>
-            <h2 data-lang-key="about-part" data-lang-html> Hi there! 👋 </h2>
+            <h2 data-lang-key="about-part" data-lang-html> Ahoj! 👋 </h2>
             <p data-lang-key="about-part1" data-lang-html>
-                My name is Jan, and I’m currently a second-year student of Information Technology at the Faculty of Education, Charles University.
-                I’ve been interested in computers and technology since I was a kid — I’ve always been fascinated by how things work, 
-                what can be changed or improved, and why things look the way they do. 💻
+                Jmenuji se Honza a momentálně studuji druhý ročník oboru Informační technologie na Pedagogické fakultě
+                Univerzity Karlovy. O počítače a technologie se zajímám už od dětství — vždy mě fascinovalo, jak věci
+                fungují, co se dá změnit nebo vylepšit a proč věci vypadají tak, jak vypadají. 💻
             </p>
             <p data-lang-key="about-part2" data-lang-html>
-                Gaming 🎮 has been a big part of my life from early on. For me, games are more than just entertainment — they’re a way to relax, unwind, 
-                and escape from reality for a while. Thanks to gaming, I’ve learned a lot of English 🇬🇧, and with games like Path of Exile, 
-                I really enjoy the strategy and thinking behind them. Sometimes, there’s just nothing better than turning everything off, opening a game, 
-                and getting lost in another world. 😄
+                Hraní her 🎮 je velkou součástí mého života už od malička. Pro mě nejsou hry jen zábava — je to způsob,
+                jak si odpočinout, vypnout a na chvíli uniknout od reality. Díky hraní jsem se toho hodně naučil
+                anglicky 🇬🇧 a u her jako Path of Exile si opravdu užívám strategii a promyšlené rozhodování. Někdy
+                není nic lepšího než všechno vypnout, zapnout hru a na chvíli se ztratit v jiném světě. 😄
             </p>
             <p data-lang-key="about-part3" data-lang-html>
-                Since elementary school, I’ve been playing tennis 🎾 — my parents and grandparents guided me toward competitive play, 
-                so I trained seriously and gradually went through all the categories from young players up to adults. For a while, I even played for two towns 
-                on weekends – Zruč nad Sázavou (youth) and Ledeč nad Sázavou (adults). In high school, I was probably in the best shape of my life — 
-                my friend and I trained five to seven times a week.
+                Od základní školy jsem hrál tenis 🎾 — moji rodiče a prarodiče mě vedli k soutěžnímu sportu, takže jsem
+                trénoval naplno a postupně prošel všemi kategoriemi od mládeže až po dospělé. Chvíli jsem dokonce hrával
+                o víkendech za dvě města — Zruč nad Sázavou (dorostenci) a Ledeč nad Sázavou (dospělí). Na střední škole
+                jsem byl asi v nejlepší formě — s kamarádem jsme trénovali pět až sedmkrát týdně.
             </p>
             <p data-lang-key="about-part4" data-lang-html>
-                After graduation, I went to a Higher Vocational School focused on Business Economics and Management. I originally wanted to study IT, 
-                but I didn’t get in at the time, so I chose this path instead — and it turned out to be a valuable experience. 
-                During my internship, I worked with CZECH.UP z.s., an organization focused on gamified education, where we created educational online 
-                courses on topics like cybersecurity and financial literacy.
+                Po maturitě jsem nastoupil na Vyšší odbornou školu zaměřenou na Ekonomiku a management. Původně jsem
+                chtěl studovat IT, ale tehdy mi to nevyšlo, tak jsem zvolil tuhle cestu — a nakonec to byla cenná
+                zkušenost. Během praxe jsem pracoval s organizací CZECH.UP z.s., kde jsme tvořili online vzdělávací
+                kurzy na témata jako kyberbezpečnost a finanční gramotnost.
             </p>
             <p data-lang-key="about-part5" data-lang-html>
-                In my internship evaluation, it was noted that I was considered a co-author of several projects, and I also earned a certificate as 
-                Lead Methodologist of the CZECH.UP JukeBox Platform for Gamified Learning. During this time, I led a team of students and friends in a 
-                project about financial literacy in cooperation with ČPP, and I also took part in international collaboration where CZECH.UP (CZ) 
-                worked together with partners from Slovakia 🇸🇰, Italy 🇮🇹, and Spain 🇪🇸. This experience taught me communication, leadership, 
-                and how to work effectively online. 🌍
+                V hodnocení praxe bylo uvedeno, že jsem byl považován za spoluautora několika projektů, a také jsem
+                získal certifikát Hlavního metodika platformy CZECH.UP JukeBox pro gamifikované vzdělávání. V té době
+                jsem vedl tým studentů a kamarádů na projektu o finanční gramotnosti ve spolupráci s ČPP (Česká
+                podnikatelská pojišťovna), a také jsem se zapojil do mezinárodní spolupráce, kde CZECH.UP (CZ) pracoval
+                s partnery ze Slovenska 🇸🇰, Itálie 🇮🇹 a Španělska 🇪🇸. Tahle zkušenost mě naučila komunikaci,
+                vedení lidí a efektivní online spolupráci. 🌍
             </p>
             <p data-lang-key="about-part6" data-lang-html>
-                After successfully completing my studies, I passed my final exams in Economics, Accounting, Management, Costing, and English, and earned 
-                the DiS. title (Certified Specialist) — with honors! 🎓 Of course, my friends and I — the same group who studied together for three years — 
-                had to celebrate properly 🍻, and even though we don’t see each other as often now, we still keep in touch.
+                Po úspěšném dokončení studia jsem úspěšně složil závěrečné zkoušky z ekonomiky, účetnictví, managementu,
+                kalkulací a angličtiny a získal titul DiS. (Diplomovaný specialista) — na červený diplom! 🎓 A
+                samozřejmě jsme to s kamarády pořádně oslavili 🍻 — i když už se nevídáme tak často, pořád jsme v
+                kontaktu.
             </p>
             <p data-lang-key="about-part7" data-lang-html>
-                Shortly after returning from a family vacation, I received an email that completely changed my plans — I was accepted to Charles University to 
-                study Information Technology with a focus on education, a field I had wanted to pursue for a long time. And it was there that I discovered 
-                what truly excites me — web development. 🖥️
+                Krátce po návratu z rodinné dovolené jsem dostal e-mail, který mi úplně změnil plány — byl jsem přijat
+                na Univerzitu Karlovu na obor Informační technologie se zaměřením na vzdělávání, obor, který jsem si
+                přál studovat už dlouho. A právě tam jsem objevil, co mě opravdu baví — vývoj webu. 🖥️
             </p>
             <p data-lang-key="about-part8" data-lang-html>
-                In my first year, I enrolled in an optional course called Web Development, where I learned the basics of HTML and CSS and built my first website — 
-                Custom Project Company, which you can find in the Projects & News section. That’s where it all began.
+                V prvním ročníku jsem si zapsal volitelný předmět Tvorba webových stránek, kde jsem se naučil základy
+                HTML a CSS a vytvořil svůj úplně první web — Custom Project Company, který najdeš v sekci Projekty &
+                Novinky. A tam to všechno začalo.
             </p>
             <p data-lang-key="about-part9" data-lang-html>
-                Now, in my second year, I’m taking the course again — but this time as a mandatory subject with a broader scope. Since all of us have already 
-                built websites before, we go through HTML and CSS faster, so we can spend more time on JavaScript, databases, and MySQL.
+                Teď, ve druhém ročníku, je ten předmět povinný a má širší rozsah. Všichni už máme zkušenosti s weby,
+                takže HTML a CSS projíždíme rychleji a můžeme se více věnovat JavaScriptu, databázím a MySQL.
             </p>
             <p data-lang-key="about-part10" data-lang-html>
-                I really enjoy working with websites — from designing layouts and tuning colors to writing the code itself. I like when everything fits 
-                together naturally and the result looks clean and balanced. ✨ I always meet deadlines, I’m reliable, and communication with me is easy — 
-                I usually reply within a few minutes. 😄
+                Práce na webech mě opravdu baví — od navrhování designu a ladění barev až po samotné psaní kódu. ✨ Mám
+                rád, když spolu všechno přirozeně ladí a výsledek působí čistě a vyváženě. Dodržuji termíny, jsem
+                spolehlivý a dobře komunikuji — většinou odpovídám během pár minut. 😄
             </p>
             <p data-lang-key="about-part11" data-lang-html>
-                In my free time, I love to play games 🎮 — gaming has been a big part of my life for years and still is. Sometimes I try out new things in 
-                HTML/CSS or do a bit of coding, but when I’m not creating, I like to watch Outdoor Boys, grab a beer 🍺, and just relax.
-                I’m also learning Python and experimenting with the Pygame library, where I’m slowly learning to make simple games — 
-                it’s still more of an experiment, but I really enjoy it. 🐍
+                Ve volném čase rád hraju hry 🎮 — jsou velkou součástí mého života už spoustu let. Občas zkouším nové
+                věci v HTML/CSS nebo trochu programuju, a když netvořím, rád se dívám na Outdoor Boys, zajdu s přáteli
+                na jedno 🍺 a prostě relaxuju. Taky se učím Python a experimentuju s knihovnou Pygame — zatím spíš
+                zábavné pokusy, ale strašně mě to baví. 🐍
             </p>
             <p data-lang-key="about-part12" data-lang-html>
-                I’m truly grateful for the people around me ❤️ — for my mom, who always supports me and does everything she can to make sure I’m happy 🌷, 
-                for my grandparents, who help and give me valuable advice 👵👴, and for my girlfriend, who supports me, believes in me, and stands by me even when I doubt myself. 💞 
+                Jsem moc vděčný lidem kolem sebe ❤️ — mamce, která mě vždy podporuje a dělá první poslední pro to,
+                abychom byli s bráchou šťastný 🌷, prarodičům, kteří mi pomáhají a radí 👵👴, a mojí přítelkyni, která
+                mi věří, podporuje mě a stojí při mně i v momentech, kdy sám o sobě pochybuji. 💞
             </p>
             <p data-lang-key="about-part13" data-lang-html>
-                If you like my work, projects, or my story, feel free to reach out. Maybe we can create something together that perfectly fits your vision. 🤝
+                Pokud se ti líbí moje práce, moje projekty nebo můj příběh, neváhej se ozvat. Třeba společně vytvoříme
+                něco, co bude přesně podle tvých představ. 🤝
             </p>
         </section>
     </main>
     <footer>
         <p>©2025 Jan Čáp | GitHub <img src="Obrazky/icons8-github-48.png" alt="GitHub" width=15>
-            | Freelancer <img src="Obrazky/freelancer-com-seeklogo.png" alt="FreeLancer" width=15> 
+            | Freelancer <img src="Obrazky/freelancer-com-seeklogo.png" alt="FreeLancer" width=15>
         </p>
     </footer>
     <div id="close-certif"></div>
-<script>
-    // Zde už je HTML prvek načten, takže to bude fungovat
-    const banner = document.getElementById('gdpr-banner');
-    const acceptBtn = document.getElementById('gdpr-accept-btn');
-    const consentKey = 'gdpr_accepted_v3';
+    <script>
+        // Zde už je HTML prvek načten, takže to bude fungovat
+        const banner = document.getElementById('gdpr-banner');
+        const acceptBtn = document.getElementById('gdpr-accept-btn');
+        const consentKey = 'gdpr_accepted_v3';
 
-    // 1. KONTROLA PŘI NAČTENÍ
-    if (localStorage.getItem(consentKey) === 'true') {
-        if (banner) {
-            banner.style.display = 'none';
-        }
-        
-        // Pokud je souhlas, spustíme jazykový skript
-        if (typeof startLangSwitcher === 'function') {
-            startLangSwitcher();
-        }
-    } else {
-        // Zde nespouštíme nic, banner zůstává viditelný
-    }
+        // 1. KONTROLA PŘI NAČTENÍ
+        if (localStorage.getItem(consentKey) === 'true') {
+            if (banner) {
+                banner.style.display = 'none';
+            }
 
-    // 2. KLIKNUTÍ NA TLAČÍTKO
-    if (acceptBtn && banner) {
-        acceptBtn.addEventListener('click', () => {
-            // A. Uloží souhlas
-            localStorage.setItem(consentKey, 'true');
-            
-            // B. Skryje banner
-            banner.style.display = 'none';
-
-            // C. Spustí jazykový přepínač (GDPR BEZPEČNÉ!)
+            // Pokud je souhlas, spustíme jazykový skript
             if (typeof startLangSwitcher === 'function') {
                 startLangSwitcher();
             }
-        });
-    }
-</script>
+        } else {
+            // Zde nespouštíme nic, banner zůstává viditelný
+        }
+
+        // 2. KLIKNUTÍ NA TLAČÍTKO
+        if (acceptBtn && banner) {
+            acceptBtn.addEventListener('click', () => {
+                // A. Uloží souhlas
+                localStorage.setItem(consentKey, 'true');
+
+                // B. Skryje banner
+                banner.style.display = 'none';
+
+                // C. Spustí jazykový přepínač (GDPR BEZPEČNÉ!)
+                if (typeof startLangSwitcher === 'function') {
+                    startLangSwitcher();
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>

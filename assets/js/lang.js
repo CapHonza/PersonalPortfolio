@@ -4,7 +4,7 @@ const CANDIDATE_PATHS = [
     'assets/i18n/lang.json',   
     '../assets/i18n/lang.json' 
 ];
-const DEFAULT_LANG = 'en';
+const DEFAULT_LANG = 'cz';
 let dict = null;
 let current = null;
 
@@ -32,7 +32,7 @@ const getInitialLang = () => {
     const saved = localStorage.getItem('lang'); 
     if (saved) return saved;
     const nav = (navigator.language || 'en').toLowerCase();
-    return nav.startsWith('cs') ? 'cz' : DEFAULT_LANG;
+    return nav.startsWith('en') ? 'en' : DEFAULT_LANG;
 };
 
 const setActiveButtons = (lang) => {
