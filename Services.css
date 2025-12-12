@@ -191,6 +191,16 @@ footer {
     nav a {
         width: 100%;
     }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-card {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* GDPR Banner Styly - Musí být viditelné nad obsahem */
