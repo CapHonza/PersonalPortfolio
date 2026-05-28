@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="cs" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="stylesheet" href="HorrorDB.css">
+    <meta name="description" content="Short, specific description of this project.">
+    <title data-lang-key="HorrorDB-title">Horrorová Databáze | Jan Čáp</title>
+    <!-- Favicony -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"> 
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+
+    <script src="../assets/js/lang.js"></script>
+    <script>window.LANG_DICT_PATH = '../assets/i18n/lang.json';</script>
+</head>
+
+<body>
+    <div id="gdpr-banner">
+        <p data-lang-key="gdpr-text">Tento web používá **funkční Local Storage** pro uložení Vaší jazykové preference.
+            Pokračováním v prohlížení souhlasíte s těmito preferenčními soubory.</p>
+        <a href="PrivacyPolicy.html" target="_blank" data-lang-key="gdpr-link-text">Více informací</a>
+        <button id="gdpr-accept-btn" class="head-button" data-lang-key="gdpr-button">Rozumím a Souhlasím</button>
+    </div>
+    <header>
+        <h1 data-lang-key="HorrorDB-h1">Horrorová Databáze</h1>
+        <p class="hero-subtitle" data-lang-key="HorrorDB-subtitle">Další z původně zápočtových projektů, 
+            který se vyvinul ve webovou aplikace pro mě a mou přítelkyni. Horrorová databáze pro záznam horrorů, které jsme již viděli, naše hodnocení a komentáře.</p>
+    </header>
+    <nav>
+        <div class="nav-links">
+            <a href="../index.html" data-lang-key="nav-home">Domů</a>
+            <a href="../Services.html" data-lang-key="nav-services">Služby</a>
+            <a href="../Projects.html" data-lang-key="nav-projects">Projekty</a>
+            <a href="../AboutMe.html" data-lang-key="nav-about">O mně</a>
+        </div>
+
+        <div class="nav-lang">
+            <button class="lang-btn" data-lang="en">
+                <img src="../Obrazky/flag-uk.svg" alt="Angličtina">
+                EN
+            </button>
+            <button class="lang-btn" data-lang="cz">
+                <img src="../Obrazky/flag-cz.svg" alt="Čeština">
+                CZ
+            </button>
+        </div>
+    </nav>
+    <section>
+        <div class="main-image">
+            <img src="WebPictures/MainSite.png" alt="Snímek Hlavní Stránky">
+        </div>
+        <div class="desc-info">
+            <div class="text">
+                <p data-lang-key="date">Datum</p>
+                <p>2026</p>
+            </div>
+            <div class="text">
+                <p data-lang-key="category">Kategorie</p>
+                <p data-lang-key="category-HorrorDB">Vývoj Webu</p>
+            </div>
+            <div class="text">
+                <p data-lang-key="tools">Technologie</p>
+                <p>HTML, CSS, JavaScript, PHP, SQL</p>
+            </div>
+            <div class="text">
+                <p>URL</p>
+                <p class="social-link">
+                    <a href="https://kraken.pedf.cuni.cz/~capjan1/HorrorDB/index.php" target="_blank"
+                        rel="noopener noreferrer">https://kraken.pedf.cuni.cz/~capjan1/HorrorDB/index.php
+                    </a>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="desc-section">
+            <div class="description">
+                <h2 data-lang-key="description">Popis</h2>
+                <p data-lang-key="HDBdescription-part1">
+                    Horrorová Databáze představuje můj první větší krok od statických frontendových stránek k dynamickému backendu. 
+                    Cílem bylo vytvořit funkční systém pro evidenci a správu sbírky hororových filmů. 
+                    Aplikace není jen vizuální šablonou, ale reálným nástrojem, který bezpečně komunikuje s databází a zpracovává uživatelské vstupy.
+                </p>
+                <p data-lang-key="HDBdescription-part2">
+                    Jádrem projektu je kompletní administrace – od zabezpečeného přihlášení uživatele až po plnohodnotné 
+                    CRUD operace (vytváření, čtení, úprava a mazání záznamů). Abych aplikaci oživil a zautomatizoval plnění dat, 
+                    propojil jsem ji s externím OMDb API, které po zadání přesného názvu filmu automaticky stáhne příslušný plakát.
+                </p>
+            </div>
+            <div class="picture">
+                <img src="WebPictures/Login.png" alt="Snímek Hlavní Webové Stránky">
+            </div>
+        </div>
+        <hr>
+        <div class="grid-gallery">
+            <img src="WebPictures/WantSee.png" alt="Snímek sekce O mně">
+            <img src="WebPictures/Comments.png" alt="Snímek sekce Projekty">
+            <img src="WebPictures/Addfilm.png" alt="Snímek sekce Služby">
+        </div>
+        <hr>
+        <h2 data-lang-key="technologies-creation">Technologie / Proces Tvorby</h2>
+        <div class="larger-text">
+            <p data-lang-key="HDB-tech-creation1">
+                Logika aplikace je napsána v čistém PHP, zatímco data jsou ukládána do relační databáze MySQL. 
+                Frontend využívá standardní HTML a CSS, přičemž hlavní důraz byl tentokrát kladen na to, co se děje 
+                "pod kapotou" – tedy na správné zpracování dat z formulářů a ochranu proti základním zranitelnostem.
+            </p>
+            <p data-lang-key="HDB-tech-creation2">
+                Velkou výzvou bylo napojení na externí OMDb API. Musel jsem implementovat logiku, která si poradí s tím, 
+                když API vyžaduje striktně přesný název filmu, a zajistit, aby aplikace nespadla, 
+                pokud externí server data nenajde nebo vrátí chybu. To mě donutilo přemýšlet nad ošetřováním chybových stavů v reálném provozu.
+            </p>
+            <p data-lang-key="HDB-tech-creation3">
+                Projekt jsem následně nasazoval na univerzitní linuxový server. 
+                Během tohoto procesu jsem si musel v praxi osahat práci s terminálem, řešení absolutních a relativních cest v PHP a 
+                především správu linuxových přístupových práv k souborům (např. bezpečné nastavení chmod 644 pro soubor s údaji k databázi), 
+                aby byl web vůbec funkční a zároveň chráněný.
+            </p>
+            <hr>
+            <h2 data-lang-key="what-i-learned">Co jsem se naučil</h2>
+            <p data-lang-key="HDBlearned1">
+                Tento projekt mi zásadně rozšířil obzory v tom, jak funguje komunikace mezi klientem a serverem. 
+                Největší posun pro mě představovalo opuštění bezpečného lokálního prostředí a řešení reálných problémů při nasazování na ostrý linuxový server, 
+                kde i špatně nastavená práva souboru znamenají nefunkční web.
+            </p>
+            <h2 data-lang-key="key-takeaways">Hlavní Přínosy</h2>
+            <ul>
+                <li data-lang-key="hdb-kt1">Návrh a správa relační databáze (MySQL) a psaní SQL dotazů.</li>
+                <li data-lang-key="hdb-kt2">Programování backendové logiky v čistém PHP.</li>
+                <li data-lang-key="hdb-kt3">Bezpečná autentizace a správa uživatelských relací (PHP Sessions)</li>
+                <li data-lang-key="hdb-kt4">Komunikace s externím REST API (OMDb) a parsování JSON dat.</li>
+                <li data-lang-key="hdb-kt5">Nasazení na linuxový server a konfigurace přístupových práv (chmod) přes terminál.</li>
+                <li data-lang-key="hdb-kt6">Zvládnutí principu CRUD operací v reálné webové aplikaci.</li>
+            </ul>
+            <p data-lang-key="HDBlearned2">
+                Vývoj HorrorDB mi potvrdil, že mě baví řešit nejen to, jak web vypadá, ale hlavně to, jak funguje uvnitř. 
+                Schopnost postavit si vlastní backend a databázi mi dala obrovskou svobodu pro tvorbu komplexnějších aplikací do budoucna.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>
+            ©2026 Jan Čáp | GitHub <img src="../Obrazky/icons8-github-48.png" alt="GitHub" width=15>
+            | Freelancer <img src="../Obrazky/freelancer-com-seeklogo.png" alt="FreeLancer" width=15>
+        </p>
+    </footer>
+    <script>
+        // Zde už je HTML prvek načten, takže to bude fungovat
+        const banner = document.getElementById('gdpr-banner');
+        const acceptBtn = document.getElementById('gdpr-accept-btn');
+        const consentKey = 'gdpr_accepted_v3';
+
+        // 1. KONTROLA PŘI NAČTENÍ
+        if (localStorage.getItem(consentKey) === 'true') {
+            if (banner) {
+                banner.style.display = 'none';
+            }
+
+            // Pokud je souhlas, spustíme jazykový skript
+            if (typeof startLangSwitcher === 'function') {
+                startLangSwitcher();
+            }
+        } else {
+            // Zde nespouštíme nic, banner zůstává viditelný
+        }
+
+        // 2. KLIKNUTÍ NA TLAČÍTKO
+        if (acceptBtn && banner) {
+            acceptBtn.addEventListener('click', () => {
+                // A. Uloží souhlas
+                localStorage.setItem(consentKey, 'true');
+
+                // B. Skryje banner
+                banner.style.display = 'none';
+
+                // C. Spustí jazykový přepínač (GDPR BEZPEČNÉ!)
+                if (typeof startLangSwitcher === 'function') {
+                    startLangSwitcher();
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
