@@ -74,13 +74,8 @@ nav a:hover {
     transition: 0.2s ease;
 }
 
-/* Jazykové tlačítka */
-.nav-lang {
-    display: flex;
-    gap: 10px;
-}
-
-.lang-btn {
+/* Error Button */
+.error-btn {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -94,17 +89,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-.lang-btn img {
-    width: 20px;
-    height: auto;
-    border-radius: 3px;
-}
-
-.lang-btn.active {
-    background-color: #E0A75D;
-}
-
-.lang-btn:hover {
+.error-btn:hover {
     transform: scale(1.05);
     transition: 0.2s ease;
 }
