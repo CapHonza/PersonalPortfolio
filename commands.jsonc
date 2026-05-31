@@ -1,0 +1,166 @@
+{
+    "--- NAVIGACE ---": {
+        "pwd": "Kde jsem?",
+        "ls -a": "Výpis všeho (i skrytých)",
+        "cd ..": "O úroveň NAHORU",
+        "cd ~": "DOMŮ (User folder)",
+        "cd -": "ZPĚT do minulé složky",
+        "clear": "Vyčistit terminál"
+    },
+    "--- GIT KOMPLET ---": {
+        "--- 1. START & NASTAVENÍ ---": {
+            "git init": "Vytvoří repozitář ve složce (ze složky se stane repo)",
+            "git clone <url>": "Naklonuje repozitář, který už je na GitHubu",
+            "git config": "Nastavení v konkrétním repozitáři",
+            "git config --global user.name \"Jan Čáp\"": "Nastaví tvé jméno pro všechny repozitáře",
+            "git config --global user.email \"capjan.work@gmail.com\"": "Nastaví tvůj e-mail",
+            "git config --global --edit": "Otevře soubor s nastavením pro úpravy"
+        },
+        "--- 2. ZÁKLADNÍ PRÁCE ---": {
+            "git status": "V jakém stavu se nachází repozitář",
+            "git diff": "Ukáže konkrétní změny, které byly v kódu provedeny",
+            "git add .": "Přidá VŠE do krabice (staging) k uložení",
+            "git add <nazev>": "Přidá konkrétní soubor do krabice (staging)",
+            "git commit": "Otevře editor (např. Vim). 1. řádek popisek, dál rozepsání",
+            "git commit -m \"zpráva\"": "Rychlý commit (jen popisek, nepsané pravidlo: do 80 znaků!)",
+            "git commit -a -m \"zpráva\"": "ZKRATKA: Přidá vše do krabice (-a) a rovnou vytvoří commit (-m)"
+        },
+        "--- 3. SYNCHRONIZACE (CLOUD) ---": {
+            "git remote add origin <url>": "Napojí lokální repo na vzdálený cloud",
+            "git push": "Odešle tvé commity na cloud (GitHub)",
+            "git pull": "Stáhne novinky z cloudu k tobě"
+        },
+        "--- 4. HISTORIE & ZÁCHRANA ---": {
+            "git log": "Seznam změn / historie commitů",
+            "tig": "Grafické okno gitu v terminálu",
+            "git commit --amend --reset-author": "Přepíše předchozí commit (oprava překlepu) a resetuje autora",
+            "git revert <hash>": "Vyruší konkrétní commit (hash najdeš v logu nebo tigu)",
+            "git reflog": "Záchranná síť: ukáže VŠECHNY změny (lze zrušit i špatný revert)",
+            "git stash": "Vezme rozdělané neuložené změny a schová je do šuplíku",
+            "git stash pop": "Vrátí změny ze šuplíku zpět do kódu"
+        },
+        "--- 5. VĚTVE (BRANCHES) ---": {
+            "git branch": "Seznam větví (ukáže, kde jsi)",
+            "git branch -M master": "Přejmenuje aktuální větev (např. na master/main)",
+            "git branch <nazev>": "Vytvoří novou větev",
+            "git switch -c <nazev>": "NOVÁ ZKRATKA: Vytvoří a hned přepne",
+            "git switch <nazev>": "Přepne tě do vybrané větve",
+            "git switch main": "Návrat do hlavní větve",
+            "git checkout -b <nazev>": "STARŠÍ ZKRATKA: Vytvoří a rovnou přepne (odpovídá switch -c)",
+            "--- PRACOVNÍ POSTUP (Krok za krokem) ---": {
+                "1. git switch -c redesign": "START: Na PC1 vytvořím novou větev a rovnou do ní skočím",
+                "2. [KÓDOVÁNÍ]": "Makám ve VS Code, měním soubory, rozbíjím věci",
+                "3. git add .": "UKLÁDÁNÍ 1/2: Připravím všechny změny ke schválení",
+                "4. git commit -m \"Zpráva\"": "UKLÁDÁNÍ 2/2: Uzamknu změny do historie této větve",
+                "5. git push origin redesign": "PŘECHOD NA MAC 1/2: Pošlu rozdělanou větev na GitHub",
+                "6. git pull": "PŘECHOD NA MAC 2/2: Sednu k Macu, stáhnu novinky z GitHubu",
+                "7. git switch redesign": "POKRAČOVÁNÍ NA MACU: Přepnu se do rozdělané práce a dál kóduju"
+            }
+        },
+        "--- 6. MERGE & MAZÁNÍ ---": {
+            "1. git switch main": "PŘÍPRAVA: Musíš být v cílové větvi",
+            "2. git merge <nazev>": "SPOJENÍ: Přilije změny z vybrané větve do Mainu",
+            "git branch -d <nazev>": "MAZÁNÍ: Smaže větev (jen po úspěšném spojení)"
+        }
+    },
+    "--- GITHUB CLI (gh) ---": {
+        "gh auth login": "Přihlášení (1x za čas)",
+        "gh auth status": "Kontrola přihlášení",
+        "gh repo create": "Nové repo (interaktivně)",
+        "gh repo view -w": "Otevře repo v prohlížeči"
+    },
+    "--- KRAKEN (SCP) ---": {
+        "scp -r ./* login@kraken.pedf.cuni.cz:public_html/slozkatarget": "Upload CELÉ SLOŽKY",
+        "scp index.php login@kraken.pedf.cuni.cz:public_html/": "Upload JEDNOHO SOUBORU"
+    },
+    "--- LINUX KOMPLET ---": {
+        "--- SÍŤOVÁ DIAGNOSTIKA & TUNELOVÁNÍ ---": {
+            "--- 1. DIAGNOSTIKA (Co kde běží) ---": {
+                "ss -tulpn": "TULIPÁN: Ukáže všechny služby, které na mém PC naslouchají na síti (hledat stav LISTEN)",
+                "ping <ip>": "Základní ověření, zda je mašina na dané IP zapnutá a odpovídá",
+                "nmap <ip>": "Rentgen služeb: Proskenuje cílový stroj a ukáže, jaké porty má otevřené",
+                "tcpdump -i eth0": "Odposlech sítě: Zobrazuje síťové pakety protékající rozhraním v reálném čase"
+            },
+            "--- 2. SSH TUNELY (Geniální věc na obcházení firewallů) ---": {
+                "ssh -L 8080:localhost:80 skola": "LOCAL PORT FORWARD (Ke mně): Zpřístupní web ze školního serveru (port 80) na mém Macu na adrese localhost:8080",
+                "ssh -R 9000:localhost:3000 skola": "REMOTE PORT FORWARD (K nim): Umožní lidem na serveru vidět rozdělaný JS projekt, který mi běží lokálně na Macu na portu 3000 (přes localhost:9000)"
+            },
+            "--- K ČEMU MI TO JE V ŽIVOTĚ? ---": {
+                "Scénář A": "Když mi nefunguje Docker nebo MAMP, přes 'ss -tulpn' zjistím, jestli mi ten port neblokuje jiná aplikace.",
+                "Scénář B": "Chci se z domova připojit do databáze na Krakenu, která není přístupná zvenčí -> protáhnu si ji domů přes SSH -L."
+            }
+        },
+        "--- DOCKER (Kontejnerizace) ---": {
+            "--- 1. ZÁKLADNÍ PŘÍKAZY ---": {
+                "docker ps": "Vypíše všechny aktuálně běžící kontejnery",
+                "docker images": "Ukáže seznam všech stažených nebo vybuilděných obrazů na disku",
+                "docker stop <nazev>": "Bezpečně zastaví běžící kontejner",
+                "docker build -t <nazev_obrazu> .": "Sestaví vlastní kontejner podle návodu v souboru Dockerfile"
+            },
+            "--- 2. DOCKER COMPOSE (Prostředí v jednom souboru) ---": {
+                "docker compose up -d": "Spustí celé prostředí (web + DB) na pozadí podle docker-compose.yaml",
+                "docker compose down": "Kompletně vypne a uklidí kontejnery definované v compose souboru",
+                "docker compose down -v": "⚠️ DESTRUKCE: Vypne kontejnery a natvrdo smaže i s nimi spojená data (Volumes)",
+                "docker compose logs -f <sluzba>": "Sleduje logy (výpis chyb) dané služby v reálném čase (např. 'logs -f db')"
+            },
+            "--- K ČEMU MI TO JE V ŽIVOTĚ? ---": {
+                "Scénář": "Zabalím PHP backend a MySQL do docker-compose.yaml. Git to přenese na Mac i CachyOS, napíšu 'up -d' a kóduju bez instalování MAMPu."
+            }
+        },
+        "--- ÚLOŽIŠTĚ & OPENZFS (Superhrdina mezi souborovými systémy) ---": {
+            "--- 1. KONTROLA DISKŮ ---": {
+                "df -h": "Ukáže zaplnění disků v lidsky čitelných jednotkách (GB, MB)",
+                "df -i": "Ukáže zaplnění Inodů (Pokud dojdou Inody, disk hlásí 'plno', i když má volné gigabajty!)",
+                "lsblk": "Zobrazí přehledný strom všech připojených disků a jejich oddílů"
+            },
+            "--- 2. ZFS KOUZLA (Copy on Write & Snapshoty) ---": {
+                "zpool status": "Zkontroluje zdraví diskového pole (jestli neumírá nějaký disk)",
+                "zfs list": "Seznam všech oddílů a datasetů v ZFS",
+                "zfs snapshot tank/storage@pred_upravou": "📸 FOTKA V ČASE: Okamžitě zazálohá stav disku před nebezpečnou akcí",
+                "zfs rollback tank/storage@pred_upravou": "⏪ NÁVRAT V ČASE: Pokud se update podělal, vrátí disk přesně do stavu snapshotu"
+            },
+            "--- K ČEMU MI TO JE V ŽIVOTĚ? ---": {
+                "Zásada": "Při stavbě domácího NASu nebo serveru pro data použiju ZFS zrcadlení (Mirror). Když mi umře disk, data přežijí. Snapshot mě ochrání před ransomwarem."
+            }
+        },
+        "--- FILE SHARING (Sdílení dat) ---": {
+            "nc -l <port> > soubor": "PŘÍJEMCE (Netcat): Otevře nezašifrovaný síťový port a čeká na data, která zapíše do souboru",
+            "nc <ip_prijemce> <port> < soubor": "ODESÍLATEL (Netcat): Pošle soubor přímo přes síť na IP adresu příjemce",
+            "rsync -rav --delete <zdroj> <cil>": "Dokonalá synchronizace složek 1:1 (smaže v cíli to, co už neexistuje ve zdroji)",
+            "mount -t nfs <ip_serveru>:/cesta /mnt/bod": "Připojí vzdálenou sdílenou složku z Linux serveru přímo do mého systému",
+            "--- K ČEMU MI TO JE V ŽIVOTĚ? ---": {
+                "Scénář": "Rsync je nejlepší kámoš na zálohování portfolia nebo filmů na externí disk – přenáší bleskově jen to, co se reálně změnilo."
+            }
+        },
+        "--- VPN / WIREGUARD ---": {
+            "wg-quick up wg0": "Zapne VPN tunel definovaný v konfiguráku wg0.conf",
+            "wg-quick down wg0": "Vypne VPN tunel",
+            "wg show": "Ukáže stav VPN spojení, přenesená data a jestli je kámoš/server připojený",
+            "--- K ČEMU MI TO JE V ŽIVOTĚ? ---": {
+                "Scénář": "Běží mi server 24/7 v cloudu nebo na škole. Přes WireGuard se do něj bezpečně zašifrovaně propojím z Macu odkudkoliv, jako bych seděl ve stejné místnosti."
+            }
+        },
+        "--- ZÁLOHOVÁNÍ & CRON ---": {
+            "--- 1. CRON (Plánovač úloh) ---": {
+                "crontab -e": "Otevře tabulku pro plánování úloh (Bacha, zadávat vždy ABSOLUTNÍ cesty!)",
+                "* * * * * <prikaz>": "Syntaxe: Minuta (0-59), Hodina (0-23), Den v měsíci (1-31), Měsíc (1-12), Den v týdnu (0-6)"
+            },
+            "--- 2. RESTIC (Chytré zálohy s deduplikací) ---": {
+                "restic init": "Vytvoří nový bezpečný a šifrovaný trezor pro zálohy (dělá se jen jednou)",
+                "restic backup /cesta": "Provede rychlou zálohu složky (ukládá jen reálné změny, šetří místo)",
+                "restic snapshots": "Vypíše seznam všech historických záloh, které v trezoru mám"
+            },
+            "--- K ČEMU MI TO JE V ŽIVOTĚ? ---": {
+                "Pravidlo 3-2-1": "Napsat si skript 'backup.sh', hodit ho do Cronu, ať se spouští každou noc, a sypat to Resticem na cloud. 3 kopie, 2 formáty, 1 mimo barák."
+            }
+        },
+        "--- ANSIBLE (Automatizace a správa konfigurací) ---": {
+            "ansible-playbook <soubor.yaml> --syntax-check": "Zkontroluje, jestli nemám v playbooku překlepy nebo špatné mezery",
+            "ansible-playbook <soubor.yaml>": "Spustí hromadnou konfiguraci serverů/PC podle zadaného scénáře",
+            "--- LOGIKA (Idempotence) ---": "Ansible se nejdřív podívá, v jakém stavu systém je. Pokud už je htop nainstalovaný, podruhé ho neinstaluje a nic nerozbije.",
+            "--- K ČEMU MI TO JE V ŽIVOTĚ? ---": {
+                "Scénář": "Rozsekám si CachyOS při experimentech? Pustím svůj Ansible playbook a za 3 minuty mám čisté PC nakonfigurované přesně do stavu, v jakém ho chci mít pro práci."
+            }
+        }
+    }
+}
