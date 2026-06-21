@@ -96,7 +96,7 @@ main {
 /* Cards */
 aside /*left*/ {
     flex: 1;
-    max-width: 25%;
+    max-width: 28%;
     background-color: #2C2623;
     border-radius: 10px;
     box-shadow: 5px 5px 5px;
@@ -119,7 +119,7 @@ aside li {
 }
 
 section /*right*/ {
-    flex: 3;
+    flex: 2;
     background-color: #2C2623;
     border-radius: 10px;
     box-shadow: 5px 5px 5px;
@@ -394,7 +394,7 @@ footer a:hover {
 /* ✅ DESKTOP: fotka vlevo a větší */
 @media (min-width: 1101px) {
   aside {
-    max-width: 25%;
+    max-width: 28%;
     text-align: left;
   }
 
