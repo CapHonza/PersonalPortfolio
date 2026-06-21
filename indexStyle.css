@@ -306,9 +306,24 @@ footer {
     background-color: #2C2623;
     text-align: center;
     margin-top: 20px;
-    padding: 1px;
-    box-shadow: 5px 5px 5px;
+    padding: 10px; 
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2); /* Jemnější zobrazení stínu */
     border-radius: 10px;
+}
+
+/* Zarovnání textu a ikonek */
+footer p {
+    margin: 0; /* Zrušení výchozího okraje odstavce */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px; /* Jemná mezera mezi textem a ikonkami */
+    flex-wrap: wrap; /* Zajistí, že se to na úzkých mobilech případně hezky zlomí */
+}
+
+/* Kdyby ikonka pořád o pixel uhýbala kvůli fontu, tohle ji dorovná */
+footer p img {
+    vertical-align: middle;
 }
 
 /* Responsive exceptions */
