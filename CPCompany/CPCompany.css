@@ -203,13 +203,36 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6px; /* Jemná mezera mezi textem a ikonkami */
+    gap: 6px;
     flex-wrap: wrap; /* Zajistí, že se to na úzkých mobilech případně hezky zlomí */
 }
 
 /* Kdyby ikonka pořád o pixel uhýbala kvůli fontu, tohle ji dorovná */
 footer p img {
     vertical-align: middle;
+}
+
+footer a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 6px;
+}
+
+footer a:hover {
+    color: #E0A75D;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+}
+
+.legal-info {
+    font-size: 0.75rem;
+    color: #888; /* Zašedlá barva, aby to nebilo do očí */
+    margin-top: 10px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Responsive Exceptions */
