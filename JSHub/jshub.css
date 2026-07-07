@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background-color: #1E1B18;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    color: #EAE0D5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    padding: 50px;
+    text-align: center;
+    background-color: #2C2623;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin-bottom: 25px;
+    color: #B88746;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2623;
+    padding: 10px 20px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* Error Button */
+.error-btn {
+    background-color: #8B2E2E;
+    border: none;
+}
+
+.error-btn:hover {
+    background-color: red;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #B88746;
+    border-radius: 10px;
+    border: 2px solid #B88746;
+    box-shadow: 3px 3px 3px;
+}
+
+nav a:hover {
+    background-color: #E0A75D;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+}
+
+/* Main */
+main {
+    display: flex;
+    align-items: stretch;
+    margin: 20px 0;
+
+    background-color: #2C2623;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+aside {
+    width: 220px;
+    flex-shrink: 0;
+    padding: 20px;
+    /* Rozdělovací border */
+    border-right: 2px solid rgba(234, 224, 213, 0.2);
+}
+
+aside>h2 {
+    border-bottom: 1px solid rgba(234, 224, 213, 0.2);
+}
+
+button {
+    height: 30px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #B88746;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #E0A75D;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #2C2623;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    /* Jemnější zobrazení stínu */
+    border-radius: 10px;
+}
+
+/* Zarovnání textu a ikonek */
+footer p {
+    margin: 0;
+    /* Zrušení výchozího okraje odstavce */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    /* Zajistí, že se to na úzkých mobilech případně hezky zlomí */
+}
+
+/* Kdyby ikonka pořád o pixel uhýbala kvůli fontu, tohle ji dorovná */
+footer p img {
+    vertical-align: middle;
+}
+
+footer a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 6px;
+}
+
+footer a:hover {
+    color: #E0A75D;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+}
+
+.legal-info {
+    font-size: 0.75rem;
+    color: #888;
+    /* Zašedlá barva, aby to nebilo do očí */
+    margin-top: 10px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive exceptions */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .error-btn {
+        margin-top: 30px;
+    }
+
+    nav a {
+        width: 100%;
+    }
+}
