@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="stylesheet" href="SWHolocron.css">
+    <meta name="description" content="Short, specific description of this project.">
+    <title>Star Wars Holocron | Jan Čáp</title>
+    <!-- Favicony -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+</head>
+
+<body>
+    <header>
+        <h1>Star Wars Holocron</h1>
+        <p class="hero-subtitle">Menší osobní projekt zaměřený na moderní frontend. 
+            Dynamická Single Page Application (SPA) sloužící jako interaktivní katalog postav ze Star Wars, 
+            který okamžitě reaguje na filtry uživatele.</p>
+    </header>
+    <nav>
+        <div class="nav-links">
+            <a href="../index.html">Domů</a>
+            <a href="../Services.html">Služby</a>
+            <a href="../Projects.html">Projekty</a>
+            <a href="../AboutMe.html">O mně</a>
+        </div>
+        <a href="mailto:capjan.work@gmail.com?subject=Bug%20Report%20-%20Portfolio" class="error-btn">Nahlásit chybu</a>
+    </nav>
+    <section>
+        <div class="main-image">
+            <img src="WebPictures/MainPageBig.webp" alt="Obrázek Hlavní Stránky">
+        </div>
+        <div class="desc-info">
+            <div class="text">
+                <p>Datum</p>
+                <p>2026</p>
+            </div>
+            <div class="text">
+                <p>Kategorie</p>
+                <p>Vývoj Webu</p>
+            </div>
+            <div class="text">
+                <p>Technologie</p>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="text">
+                <p>URL</p>
+                <p class="social-link">
+                    <a href="https://caphonza.github.io/SW-Holocron/" target="_blank"
+                        rel="noopener noreferrer">https://caphonza.github.io/SW-Holocron/
+                    </a>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="desc-section">
+            <div class="description">
+                <h2>Popis</h2>
+                <p>
+                    Star Wars Holocron vznikl jako praktický projekt pro ověření znalostí po dokončení kurzu Reactu. 
+                    Cílem bylo postavit dynamickou webovou aplikaci úplně od nuly a vyzkoušet si, jak funguje moderní frontendový vývoj v praxi, 
+                    bez použití předpřipravených šablon.
+                </p>
+                <p>
+                    Aplikace slouží jako katalog postav ze Star Wars. 
+                    Data se stahují z externího zdroje a následně se dynamicky vykreslují na obrazovku. 
+                    Uživatel může postavy filtrovat podle kategorií (Jedi, Sith, Droid atd.), přičemž web díky architektuře Reactu reaguje naprosto okamžitě, 
+                    aniž by se musela celá stránka znovu načítat.
+                </p>
+            </div>
+            <div class="picture">
+                <img src="WebPictures/Database.webp" alt="Obrázek katalogu">
+            </div>
+        </div>
+        <hr>
+        <div class="grid-gallery">
+            <img src="WebPictures/FetchDat.webp" alt="Obrázek kódu pro fetch">
+            <img src="WebPictures/FiltrDat.webp" alt="Obrázek kódu pro filtrování">
+            <img src="WebPictures/TeloKomponenty.webp" alt="Obrázek Těla komponenty">
+        </div>
+        <hr>
+        <h2>Technologie / Proces Tvorby</h2>
+        <div class="larger-text">
+            <p>
+                Celý projekt je postaven na javascriptové knihovně React. 
+                Místo tradičního Vanilla JavaScriptu, kde se manipuluje přímo s DOM elementy, 
+                zde logiku řídí React hooky – useState pro ukládání dynamických hodnot (např. aktuálně vybrané kategorie) a 
+                useEffect pro asynchronní stahování dat při prvním načtení.
+            </p>
+            <p>
+                Pro sestavení a chod projektu jsem využil moderní nástroj Vite. Velkou výzvou bylo zprovoznění klientského routování pomocí React Routeru. 
+                Musel jsem pochopit, jak správně propojovat komponenty tak, aby se měnil pouze obsah hlavní části stránky, zatímco navigační lišta a 
+                patička zůstávají neustále aktivní.
+            </p>
+            <p>
+                Závěrečnou fází bylo nasazení aplikace na GitHub Pages. 
+                Zde jsem si musel v praxi osahat celý "build proces" – od kompilace kódu přes nastavení správných výchozích cest 
+                (basename) v konfiguračním souboru Vite až po finální deployment zkompilované verze na produkční server.
+            </p>
+            <hr>
+            <h2>Co jsem se naučil</h2>
+            <p>
+                Největším přínosem pro mě byla změna vývojářského myšlení. 
+                Musel jsem opustit klasický imperativní přístup a naučit se "myslet v komponentách". 
+                Pochopil jsem princip, kdy React automaticky překresluje uživatelské rozhraní čistě na základě toho, 
+                jak se mění data (stavy) na pozadí, což obrovsky zjednodušuje tvorbu interaktivních webů.
+            </p>
+            <h2>Hlavní Přínosy</h2>
+            <ul>
+                <li>Založení projektu a vývojového prostředí pomocí nástroje Vite.</li>
+                <li>Tvorba, propojování a stylování znovupoužitelných UI komponent v JSX.</li>
+                <li>Používání React hooků (useState, useEffect) pro správu stavu aplikace a side-efektů.</li>
+                <li>Asynchronní načítání dat z externího JSON souboru a ošetření chybových stavů.</li>
+                <li>Implementace klientského routování přes knihovnu React Router.</li>
+                <li>Zkušenost s build procesem a nasazením SPA do produkčního prostředí na GitHub Pages.</li>
+            </ul>
+            <p>
+                Vývoj Star Wars Holocronu mi ukázal, jak obrovský rozdíl je mezi psaním čistého JavaScriptu a 
+                využitím moderního frameworku. Zvládnutí komponentového přístupu a správy stavů mi dalo naprosto nový pohled na to, 
+                jak lze stavět rychlá a interaktivní uživatelská rozhraní. Tento projekt mi potvrdil, že se nebojím opustit komfortní zónu tutoriálů a 
+                dokážu se poprat s reálnými problémy vývoje od nuly. Ověřil jsem si, že nezáleží jen na napsání kódu, ale hlavně na vytrvalosti dotáhnout 
+                aplikaci přes všechny překážky až do úspěšného nasazení, což tvoří skvělý odrazový můstek pro mé budoucí FullStack aplikace.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>©2026 Jan Čáp | 
+            <a href="https://github.com/CapHonza" target="_blank" rel="noopener noreferrer"> GitHub <img src="../Obrazky/icons8-github-48.png" alt="GitHub" width=15></a> | 
+            <a href="https://www.linkedin.com/in/jancap-tech/" target="_blank" rel="noopener noreferrer"> LinkedIn <img src="../Obrazky/icons8-linkedin-48.png" alt="LinkedIn" width=15></a>
+        </p>
+        <p class="legal-info">
+            Jsem student IT na Univerzitě Karlově. Webové projekty na tomto portfoliu vznikly pro mé vlastní 
+            zdokonalení nebo v rámci univerzitního studia. Případné weby pro lokální zájemce realizuji 
+            formou Dohody o provedení práce (DPP).
+        </p>
+    </footer>
+</body>
+
+</html>
