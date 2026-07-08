@@ -140,7 +140,8 @@ section {
     padding: 20px;
 }
 
-#content-box p { /* Řešení pro to, aby mi to neomezovalo fetchnutá data */
+#content-box p,
+#content-box ul { /* Řešení pro to, aby mi to neomezovalo fetchnutá data */
     max-width: 800px;
     line-height: 1.6;
 }
@@ -197,7 +198,36 @@ footer a:hover {
     margin-right: auto;
 }
 
-/* Responsive exceptions */
+/* ==============================
+-------- REST API soubor --------
+============================== */
+
+.restapi-code-gallery {
+    display: grid;
+    /* Tohle je největší kouzlo: 
+    Říká to "udělej sloupce, které mají minimálně 250px. 
+       Pokud je místo, narvi je vedle sebe. Pokud místo není, hoď je pod sebe." */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Mezera mezi obrázky */
+    margin-top: 30px;
+}
+
+.restapi-code-gallery img {
+    width: 100%; /* Obrázek se vždy přizpůsobí svému sloupečku */
+    height: auto;
+    border-radius: 8px; /* Jemně zakulacené rohy, ať to ladí */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Hezký stín, aby karty "vystoupily" z pozadí */
+    transition: transform 0.3s ease; /* Příprava na hover efekt */
+}
+
+/* Malý bonus pro ten "showcase" feel */
+.restapi-code-gallery img:hover {
+    transform: translateY(-5px); /* Při najetí myší fotka lehce poskočí nahoru */
+}
+
+/* ==============================
+----- Responsive exceptions -----
+============================== */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -215,5 +245,19 @@ footer a:hover {
 
     nav a {
         width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid rgba(234, 224, 213, 0.7);
+    }
+
+    .btn-group {
+        margin-bottom: 20px;
     }
 }
