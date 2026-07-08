@@ -15,6 +15,10 @@ h3 {
     font-family: 'Poppins', sans-serif;
 }
 
+.active {
+    background-color: #E0A75D;
+}
+
 /* Header */
 header {
     padding: 50px;
@@ -113,6 +117,8 @@ button {
     background-color: #B88746;
     border: none;
     border-radius: 6px;
+    
+    text-align: start;
 }
 
 button:hover {
@@ -132,6 +138,11 @@ button:hover {
 section {
     flex: 1;
     padding: 20px;
+}
+
+#content-box p { /* Řešení pro to, aby mi to neomezovalo fetchnutá data */
+    max-width: 800px;
+    line-height: 1.6;
 }
 
 /* Footer */

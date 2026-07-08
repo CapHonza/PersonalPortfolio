@@ -1,0 +1,18 @@
+<h2>Můj první REST API Backend</h2>
+<p>Tento projekt je finálním cvičením z Codédexu, kde jsem od nuly postavil vlastní server v čistém Node.js, který zpracovává všechny základní HTTP metody.</p>
+
+<h3>Co je to REST API?</h3>
+<ul>
+    <li><strong>API (Application Programming Interface):</strong> Komunikační rozhraní mezi frontendem a backendem. Server nevrací celou HTML stránku pro lidi, ale vrací jen "surová data" pro jiné programy. Funguje jako číšník – frontend si objedná data, API mu je přinese.</li>
+    <li><strong>REST (Representational State Transfer):</strong> Jsou to "pravidla slušného chování" pro API. Říká, že by se pro specifické akce měly používat správné HTTP metody (CRUD operace).</li>
+</ul>
+
+<h3>Jaké metody tento kód zpracovává:</h3>
+<ul>
+    <li><strong>GET (Read):</strong> Získání aktuální nálady. (Spouští se přes prohlížeč)</li>
+    <li><strong>POST (Create):</strong> Vytvoření/přidání nové nálady. (Simulováno přesunutím do prázdné proměnné)</li>
+    <li><strong>PATCH (Update):</strong> Částečná úprava. K existující náladě se přilepí (<code>+=</code>) nová data.</li>
+    <li><strong>PUT (Update):</strong> Úplný přepis. Původní nálada se kompletně nahradí (<code>=</code>) novou.</li>
+    <li><strong>DELETE (Delete):</strong> Smazání nálady. Proměnná se nastaví na <code>null</code>.</li>
+</ul>
+

@@ -20,8 +20,9 @@
 <body>
     <header>
         <h1>JavaScript Hub</h1>
-        <p class="hero-subtitle">JS Hub nebo JavaScript Hub slouží k ukázce mých kódů, které mi přišly zajímavé nebo
-            užitečné a rád bych se s nimi pochlubil.</p>
+        <p class="hero-subtitle">Moje pískoviště pro JavaScript.
+            Odkládám si sem kousky kódu a řešení, která mi při vývoji udělala
+            radost nebo mi přišla natolik užitečná, že je chci mít po ruce.</p>
     </header>
     <nav>
         <div class="nav-links">
@@ -36,17 +37,21 @@
         <aside>
             <h2>JavaScript</h2>
             <div class="btn-group">
-                <button>Fetch</button>
-                <button>Routing</button>
-                <button>Function</button>
+                <button data-soubor="fetch-old">Fetch API</button>
+                <button data-soubor="fetch-new">Fetch Async / Await</button>
             </div>
             <h2>Node.js</h2>
             <div class="btn-group">
-                <button>REST API backend</button>
+                <button data-soubor="rest-api">REST API</button>
             </div>
         </aside>
-        <section>
-            <h1>hlavní kontent</h1>
+        <section id="content-box">
+            <h1>Prozkoumejte můj JavaScriptový kód</h1>
+            <p>Tato sekce funguje jako interaktivní archiv mého učení a vývoje. Najdete zde širokou škálu ukázek – od úplných základů práce s 
+                DOMem a jednoduchých logických cvičení až po moderní asynchronní stahování dat a návrh backendového rozhraní.
+                Cílem není jen ukázat hotový kód, ale demonstrovat postupný vývoj mých schopností.
+            </p>
+            <p><em>Vyberte si téma v levém panelu a podívejte se, jak to funguje v praxi.</em></p>
         </section>
     </main>
 
@@ -63,6 +68,7 @@
             formou Dohody o provedení práce (DPP).
         </p>
     </footer>
+<script src="script.js"></script>
 </body>
 
 </html>
