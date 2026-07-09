@@ -222,10 +222,23 @@ section {
     text-decoration: none;
     border: 5px solid #B88746;
 
-    transition: transform 0.3s ease;   
+    transition: transform 0.3s ease; 
+    
+    position: relative;
 }
 
-.project-card img {
+.pinned-icon {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 40px;
+    z-index: 10;
+
+    filter: drop-shadow(-1px -2px 3px rgba(0, 0, 0, 0.8));
+    transform: rotate(-10deg);
+}
+
+.project-card img:not(.pinned-icon) {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;

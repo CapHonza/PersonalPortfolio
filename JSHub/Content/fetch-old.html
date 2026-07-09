@@ -1,1 +1,17 @@
-<h2>Starší metoda Fetch() z kurzu Codedex.io</h2>
+<h2>Klasický Fetch a práce s Promisy</h2>
+<p>
+    Každý vývojář by měl znát základy. V této ukázce z mého tréninku na platformě 
+    Codedex pracuji s klasickým zápisem Fetch API pomocí zřetězených 
+    metod <code>.then()</code>. 
+</p>
+<p>
+    Skript posílá požadavek na externí API pro generování vtipů. 
+    Hlavní výzvou zde bylo správně zachytit odpověď, převést ji do formátu JSON a 
+    následně data vypsat do DOMu. Ačkoliv je tento přístup plně funkční, při složitějších operacích 
+    může vést k nepřehlednému kódu (tzv. callback hell).
+</p>
+
+
+<div class="code-gallery">
+    <img src="./Pictures/FetchOLD.webp" alt="Ukázka kódu klasického fetch" data-src="./Pictures/FetchOLD.webp">
+</div>

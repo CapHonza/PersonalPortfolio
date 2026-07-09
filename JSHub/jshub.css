@@ -146,6 +146,34 @@ section {
     line-height: 1.6;
 }
 
+.closeup-img {
+    display: none;
+}
+
+.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border: 3px solid #B88746; 
+    background-color: #1E1B18; /* tmavé pozadí pod obrázkem */
+    padding: 5px;
+}
+
 /* Footer */
 footer {
     background-color: #2C2623;
@@ -198,11 +226,11 @@ footer a:hover {
     margin-right: auto;
 }
 
-/* ==============================
--------- REST API soubor --------
-============================== */
+/* ===============================
+---------- CODE GALLERY ----------
+=============================== */
 
-.restapi-code-gallery {
+.code-gallery {
     display: grid;
     /* Tohle je největší kouzlo: 
     Říká to "udělej sloupce, které mají minimálně 250px. 
@@ -210,19 +238,23 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px; /* Mezera mezi obrázky */
     margin-top: 30px;
+    padding: 30px;
 }
 
-.restapi-code-gallery img {
+.code-gallery img {
     width: 100%; /* Obrázek se vždy přizpůsobí svému sloupečku */
     height: auto;
     border-radius: 8px; /* Jemně zakulacené rohy, ať to ladí */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Hezký stín, aby karty "vystoupily" z pozadí */
     transition: transform 0.3s ease; /* Příprava na hover efekt */
+    border: 4px solid #B88746;
 }
 
 /* Malý bonus pro ten "showcase" feel */
-.restapi-code-gallery img:hover {
+.code-gallery img:hover {
     transform: translateY(-5px); /* Při najetí myší fotka lehce poskočí nahoru */
+    cursor: pointer;
+    border: 4px solid #E0A75D;
 }
 
 /* ==============================

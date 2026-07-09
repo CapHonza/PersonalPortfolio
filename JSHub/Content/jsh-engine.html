@@ -1,0 +1,21 @@
+<h2>Srdce portfolia: Generický Vanilla SPA Router</h2>
+<p>
+    Toto je pravděpodobně nejdůležitější kousek kódu na celém mém JS Hubu.
+    Místo toho, abych pro každou podstránku tvořil samostatný HTML soubor a
+    web se při každém kliknutí musel znovu načítat, vytvořil jsem si vlastní jednoduchý systém 
+    inspirovaný Single Page Aplikacemi (SPA).
+</p>
+<p>
+    Skript využívá asynchronní Fetch k dynamickému stahování obsahu a jeho 
+    vkládání do hlavního kontejneru. Důraz jsem kladl na tři klíčové architektonické pilíře:
+</p>
+<ul>
+    <li><strong>Škálovatelnost (DRY princip):</strong> Skript je navržen genericky. Pokud v budoucnu přidám další cvičení, nemusím v hlavním JavaScriptu přepisovat jedinou řádku.</li>
+    <li><strong>Ochrana a UX (Try / Catch):</strong> Vše je zabaleno v bloku <code>try/catch</code>. Pokud stahování obsahu selže (např. výpadek sítě), skript bezpečně "spadne" do záchranné sítě a uživateli zobrazí chybovou hlášku, aniž by rozbil zbytek stránky.</li>
+    <li><strong>Správa paměti:</strong> Navrhl jsem centralizovaný Lightbox (přibližování fotek), který chytře spravuje Event Listenery, aby nedocházelo k tzv. memory leakům při častém překlikávání stránek.</li>
+</ul>
+
+<div class="code-gallery">
+    <img src="./Pictures/jshe-lightbox.webp" alt="Generická funkce pro Lightbox a optimalizaci paměti" data-src="./Pictures/jshe-lightbox.webp">
+    <img src="./Pictures/jshe-fetch.webp" alt="Hlavní asynchronní motor pro načítání obsahu" data-src="./Pictures/jshe-fetch.webp">
+</div>

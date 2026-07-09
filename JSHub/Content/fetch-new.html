@@ -1,1 +1,16 @@
-<h2>Novější metoda Fetch() z kurzu Codedex.io</h2>
+<h2>Moderní přístup: Async / Await</h2>
+<p>
+    Zatímco klasický Fetch s <code>.then()</code> je dobrý pro pochopení základů, 
+    v praxi preferuji modernější syntaxi <code>async / await</code>. Kód je díky ní mnohem čitelnější a 
+    strukturou připomíná synchronní programování, ačkoliv běží asynchronně na pozadí.
+</p>
+<p>
+    V této ukázce (napojení na NASA API s astronomickým obrázkem dne) jsem se navíc 
+    zaměřil na robustní ošetření chyb. Logika neobsahuje jen samotné stahování dat, 
+    ale také validaci uživatelského vstupu (kontrola data) a ošetření chybových stavů sítě.
+</p>
+
+<div class="code-gallery">
+    <img src="./Pictures/FetchNEW1.webp" alt="Kód pro získání dat z NASA API" data-src="./Pictures/FetchNEW1.webp">
+    <img src="./Pictures/FetchNEW2.webp" alt="Validace vstupu a Event Listener" data-src="./Pictures/FetchNEW2.webp">
+</div>
