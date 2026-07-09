@@ -119,6 +119,7 @@ button {
     border-radius: 6px;
     
     text-align: start;
+    color: black;
 }
 
 button:hover {
