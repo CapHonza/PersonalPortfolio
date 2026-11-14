@@ -67,14 +67,14 @@
                     Hororová Databáze představuje můj první větší krok od statických frontendových stránek k dynamickému
                     backendu.
                     Cílem bylo vytvořit funkční systém pro evidenci a správu sbírky hororových filmů.
-                    Aplikace není jen vizuální šablonou, ale reálným nástrojem, který bezpečně komunikuje s databází a
-                    zpracovává uživatelské vstupy.
+                    Aplikace není jen vizuální šablonou, ale reálným nástrojem, který komunikuje s databází pomocí PDO 
+                    a parametrizovaných SQL dotazů a zpracovává uživatelské vstupy.
                 </p>
                 <p>
                     Jádrem projektu je kompletní administrace – od zabezpečeného přihlášení uživatele až po plnohodnotné
                     CRUD operace (vytváření, čtení, úprava a mazání záznamů). Abych aplikaci oživil a zautomatizoval
                     plnění dat,
-                    propojil jsem ji s externím OMDb API, které po zadání přesného názvu filmu automaticky stáhne
+                    propojil jsem ji pomocí JavaScriptu s externím OMDb API, které po zadání přesného názvu filmu automaticky stáhne
                     příslušný plakát.
                 </p>
             </div>
@@ -94,7 +94,7 @@
             <p>
                 Logika aplikace je napsána v čistém PHP, zatímco data jsou ukládána do relační databáze MySQL.
                 Frontend využívá standardní HTML a CSS, přičemž hlavní důraz byl tentokrát kladen na to, co se děje
-                "pod kapotou" – tedy na správné zpracování dat z formulářů a ochranu proti základním zranitelnostem.
+                "pod kapotou" – tedy na správné zpracování dat z formulářů a základní bezpečnostní opatření při zpracování uživatelských vstupů.
             </p>
             <p>
                 Velkou výzvou bylo napojení na externí OMDb API. Musel jsem implementovat logiku, která si poradí s tím,
@@ -123,7 +123,7 @@
                 <li>Návrh a správa relační databáze (MySQL) a psaní SQL dotazů.</li>
                 <li>Programování backendové logiky v čistém PHP.</li>
                 <li>Bezpečná autentizace a správa uživatelských relací (PHP Sessions)</li>
-                <li>Komunikace s externím REST API (OMDb) a parsování JSON dat.</li>
+                <li>Komunikace frontendového JavaScriptu s externím REST API (OMDb) a zpracování JSON dat.</li>
                 <li>Nasazení na linuxový server a konfigurace přístupových práv (chmod) přes terminál.</li>
                 <li>Zvládnutí principu CRUD operací v reálné webové aplikaci.</li>
             </ul>
